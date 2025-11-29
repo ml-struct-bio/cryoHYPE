@@ -5,8 +5,8 @@
 Install `cryodrgn` in a clean Conda environment, following the instruction from the [cryoDRGN Github repository](https://github.com/ml-struct-bio/cryodrgn): 
 
     # Create and activate conda environment
-    (base) $ conda create --name cryodrgn python=3.12
-    (cryodrgn) $ conda activate cryodrgn
+    (base) $ conda create --name cryohype python=3.12
+    (cryohype) $ conda activate cryohype
 
     # install cryodrgn
-    (cryodrgn) $ pip install cryodrgn
+    (cryohype) $ pip install cryodrgn
