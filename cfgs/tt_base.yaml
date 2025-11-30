@@ -1,0 +1,42 @@
+trainer: nvs_trainer_vpt
+
+lightning: 
+  accelerator: gpu
+  devices: 2
+  strategy: ddp
+  fast_dev_run: False
+  max_epochs: 50
+  check_val_every_n_epoch: 1
+
+train_dataset:
+  loader:
+    batch_size: 32
+    num_workers: 2
+
+test_dataset:
+  loader:
+    batch_size: 32
+    num_workers: 2
+
+model:
+  name: trans_inr
+  args:
+    tokenizer:
+      name: base_tokenizer
+      args: {input_size: 129, patch_size: 16, img_channels: 1}
+    hyponet:
+      name: hypo_nerf
+      args: {depth: 5, hidden_dim: 1024, pe_type: gaussian, pe_dim: 128, residual: True}
+    n_groups: 32
+    transformer_encoder:
+      name: transformer_encoder
+      args: {dim: 768, depth: 6, n_head: 12, head_dim: 64, ff_dim: 3072}
+    norm: False
+
+optimizer:
+  name: adam
+  args: {lr: 1.e-4}
+scheduler:
+  name: cosine
+  warmup_epochs: 5
+  epochs: 50
