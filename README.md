@@ -9,6 +9,7 @@ Install `cryoHYPE` as follows:
     (cryohype) $ conda activate cryohype
 
     # install cryohype
+    (cryohype) $ cd cryoHYPE 
     (cryohype) $ pip install -e . 
     (cryohype) $ python -m pip install lightning
     (cryohype) $ pip install einops torchvision wandb
