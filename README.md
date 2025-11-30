@@ -18,3 +18,5 @@ Install `cryoHYPE` as follows:
 
 ### Data preparation
 
+In this example, we will run train and evaluate `cryoHYPE` on the Tomotwin-100 dataset. To download the dataset, follow the instructions on the [CryoBench website](https://cryobench.cs.princeton.edu/). Let `TOMOTWIN_DIR` be the path to the Tomotwin-100 dataset.  
+
