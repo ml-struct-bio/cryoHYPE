@@ -12,3 +12,8 @@ Install `cryoHYPE` as follows:
     (cryohype) $ pip install -e . 
     (cryohype) $ python -m pip install lightning
     (cryohype) $ pip install einops torchvision wandb
+
+## Training `cryoHYPE`
+
+### Data preparation
+
