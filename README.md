@@ -8,5 +8,7 @@ Install `cryoHYPE` as follows:
     (base) $ conda create --name cryohype python=3.10
     (cryohype) $ conda activate cryohype
 
-    # install cryodrgn
+    # install cryohype
     (cryohype) $ pip install -e . 
+    (cryohype) $ python -m pip install lightning
+    (cryohype) $ pip install einops torchvision wandb
