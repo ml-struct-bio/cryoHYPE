@@ -31,7 +31,6 @@ model:
     transformer_encoder:
       name: transformer_encoder
       args: {dim: 768, depth: 6, n_head: 12, head_dim: 64, ff_dim: 3072}
-    norm: False
 
 optimizer:
   name: adam
