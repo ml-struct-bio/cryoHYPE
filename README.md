@@ -74,3 +74,37 @@ python analysis_scripts/per_image_fsc_plot.py \
     [directory where you saved FSC results] \
     --Apix 4.5 > "[directory where you want to save raw FSCs]/End-to-End-FSC_AUC_mask.txt"
 ```
+
+## Acknowledgements
+
+Our code is based on the codebases for [cryoDRGN](https://github.com/ml-struct-bio/cryodrgn/tree/main)
+
+```
+@article{zhong2021cryodrgn,
+  title={CryoDRGN: reconstruction of heterogeneous cryo-EM structures using neural networks},
+  author={Zhong, Ellen D and Bepler, Tristan and Berger, Bonnie and Davis, Joseph H},
+  journal={Nature methods},
+  volume={18},
+  number={2},
+  pages={176--185},
+  year={2021},
+  publisher={Nature Publishing Group US New York}
+}
+```
+```
+@article{zhong2019reconstructing,
+  title={Reconstructing continuous distributions of 3D protein structure from cryo-EM images},
+  author={Zhong, Ellen D and Bepler, Tristan and Davis, Joseph H and Berger, Bonnie},
+  journal={arXiv preprint arXiv:1909.05215},
+  year={2019}
+}
+```
+and [Trans-INR](https://github.com/yinboc/trans-inr/tree/master)
+```
+@inproceedings{chen2022transinr,
+  title={Transformers as Meta-Learners for Implicit Neural Representations},
+  author={Chen, Yinbo and Wang, Xiaolong},
+  booktitle={European Conference on Computer Vision},
+  year={2022},
+}
+```
