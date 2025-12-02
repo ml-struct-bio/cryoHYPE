@@ -17,7 +17,8 @@ classifiers = [
     "Operating System :: POSIX :: Linux",
 ]
 dependencies = [
-    "torch>=1.0.0",
+    "torch==2.4.1",
+    "lightning==2.4.0",
     "pandas<2",
     "numpy<1.23",
     "matplotlib<3.7",
@@ -30,7 +31,10 @@ dependencies = [
     "notebook<7",
     "umap-learn",
     "ipywidgets<8",
-    "healpy"
+    "healpy",
+    "einops",
+    "torchvision",
+    "wandb",
 ]
 
 [project.optional-dependencies]
