@@ -75,6 +75,18 @@ python analysis_scripts/per_image_fsc_plot.py \
     --Apix 4.5 > "[directory where you want to save raw FSCs]/End-to-End-FSC_AUC_mask.txt"
 ```
 
+## Citation
+If you find this repository useful to your work, please cite
+
+```
+@article{gu2025cryohype,
+  title={CryoHype: Reconstructing a thousand cryo-EM structures with transformer-based hypernetworks},
+  author={Gu, Jeffrey and Jeon, Minkyu and Ma, Ambri and Yeung-Levy, Serena and Zhong, Ellen D},
+  journal={arXiv preprint arXiv:2512.06332},
+  year={2025}
+}
+```
+
 ## Acknowledgements
 
 Our code is based on the codebases for [cryoDRGN](https://github.com/ml-struct-bio/cryodrgn/tree/main)
